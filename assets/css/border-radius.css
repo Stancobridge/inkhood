@@ -1,0 +1,16 @@
+.br-6{
+  border-radius: 6px !important;;
+}
+
+.br-10{
+  border-radius: 10px !important;
+}
+
+.br-left{
+  border-radius: 0.5rem 0rem 0rem 0.5rem !important;
+}
+
+.br-top{
+  border-radius: 0.5rem 0.5rem 0rem 0rem  !important;
+}
+

@@ -1,0 +1,127 @@
+@keyframes sliderHome{
+        0%{
+          left: 0%;
+        }
+
+        35%{
+          left: 0%;
+        }
+        40%{
+          left: -100%
+        }
+        65%{
+          left: -100%;
+        }
+        70%{
+          left: -200%;
+        }
+        95%{
+          left: -200%;
+        }
+        100%{
+          left: 0%;
+        }
+      
+}
+
+
+
+@keyframes firstdot {
+  0%{
+    color: var(--primary-color-light);
+  }
+
+  35%{
+    color: var(--primary-color-light);
+  }
+  40%{
+    color: white;
+  }
+  65%{
+    color: white;
+  }
+  70%{
+    color: white;
+  }
+  95%{
+    color: white;
+  }
+  100%{
+    color: var(--primary-color-light);
+  }
+
+}
+
+
+@keyframes seconddot {
+  0%{
+    color: white;
+  }
+
+  35%{
+    color: white;
+  }
+  40%{
+    
+    color: var(--primary-color-light);
+  }
+  65%{
+    color: var(--primary-color-light);
+  }
+  70%{
+    color: white;
+  }
+  95%{
+    color: white;
+  }
+  100%{
+    color: white
+  }
+
+}
+
+@keyframes thirddot {
+  0%{
+    color: white;
+  }
+
+  35%{
+    color: white;
+  }
+  40%{
+    
+    color: white;
+  }
+  65%{
+    color: white;
+  }
+  70%{
+    color: var(--primary-color-light);
+  }
+  95%{
+    color: var(--primary-color-light);
+  }
+  100%{
+    color: white
+  }
+
+}
+
+@keyframes closeNav{
+  from{
+    right: 0%;
+  }
+  to{
+    right: -90%;
+  }
+}
+
+
+@keyframes showNav{
+  from{
+    right: -90%;
+  }
+  to{
+    right: 0%;
+  }
+}

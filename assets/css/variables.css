@@ -1,0 +1,13 @@
+/* color variables */
+:root{
+  --primary-color: #3f1247;
+  --primary-color-light: #9d18b4;
+  --secondary-color: #761387;
+  --warning-color: rgb(169, 224, 17);
+  --link-color: black;
+  --danger-color: red;
+  --success-color: rgb(7, 117, 99);
+  --white-color: white;
+  --dark-color: rgb(46, 46, 46);
+  --input-field-color: #f8eafa;
+}

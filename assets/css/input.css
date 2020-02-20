@@ -1,0 +1,23 @@
+.form-field {
+  width: 100%;
+  border: none;
+  background-color: var(--input-field-color);
+  border-bottom: 2px solid var(--input-field-color);;
+  box-sizing: border-box;
+  outline: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  transition: 0.25s all;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 0.5rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  padding: 0.375rem 0.75rem;
+
+  background-clip: padding-box;
+
+}
+
+.form-field:focus {
+  border-bottom: 2px solid var(--primary-color);
+}

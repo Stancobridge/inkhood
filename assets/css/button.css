@@ -1,0 +1,45 @@
+.btn {
+    border: none;
+    box-shadow: 0px 0px 2px 1px rgb(211, 162, 252);
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: .375rem .75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+    outline: none;
+    background-color: white;
+    text-align: center;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: inherit;
+}
+  .btn-primary{
+    background-color: var(--primary-color-light);
+    color: white !important;
+    box-sizing: border-box;
+  }
+
+.btn-success {
+    background-color: var(--success-color);
+    color: white !important;
+    /* border: 1px solid rgb(27, 189, 121); */
+    box-sizing: border-box;
+  }
+  
+  .btn-danger {
+    background-color: rgb(189, 27, 81);
+    color: white!important;
+    /* border: 1px solid rgb(189, 27, 81); */
+    box-sizing: border-box;
+  }
+  
+  .btn-full {
+    width: 100%;
+  }
