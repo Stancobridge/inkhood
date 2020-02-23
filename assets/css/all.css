@@ -187,13 +187,16 @@ p {
   width: 100%;
   position: relative;
   top: -40px;
-  box-shadow: -6px 6px 5px 0px rgb(212, 212, 212) ;
+  box-shadow: -6px 6px 5px 0px rgb(212, 212, 212);
   border-radius: 6px;
-  
 }
 
 .preview {
   background-color: #f7ecf8;
+}
+
+.preview-set {
+  background-color: #faf9fa;
 }
 
 .ink-welcome-books {
@@ -212,23 +215,21 @@ p {
 }
 
 .second-curve {
-  background-color: #e7eaec;;
+  background-color: #e7eaec;
   border-top-left-radius: 50px;
   color: black;
 }
 
-
-.second-curve-cont{
+.second-curve-cont {
   border-bottom: 1px solid rgb(206, 206, 206);
 }
 
-.book-show-cont{
+.book-show-cont {
   width: 95%;
   scroll-snap-align: start;
-  
 }
 
-.site-show{
+.site-show {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   width: 100%;
@@ -237,4 +238,141 @@ p {
 
 .site-show::-webkit-scrollbar {
   width: 0 !important;
+}
+
+.thumb_img {
+  display: block;
+  width: 80%;
+  height: 130px;
+}
+
+.top-pick-book {
+  display: grid;
+  grid-template-columns: repeat(10, 32%);
+  grid-gap: 8px;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+  overflow: -moz-scollbars-none;
+}
+.top-pick-book::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.top-pick-book > div {
+  scroll-snap-align: start;
+}
+
+.list-cats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+  overflow: -moz-scollbars-none;
+  background-color: rgb(41, 6, 49);
+}
+
+.list-cats div {
+  height: 90px;
+  color: white;
+  text-align: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+}
+.cat-overlay {
+  padding: 20px;
+}
+.romance-cat-icon {
+  background-image: url(../img/cats_thumb/cat_romance.jpg);
+}
+
+.comedy-cat-icon {
+  background-image: url(../img/cats_thumb/cat_comedy.jpg);
+}
+.scifi-cat-icon {
+  background-image: url(../img/cats_thumb/cat_scifi.jpg);
+}
+
+.teen-cat-icon {
+  background-image: url(../img/cats_thumb/cat_teen.jpg);
+}
+
+.magic-cat-icon {
+  background-image: url(../img/cats_thumb/cat_magical.jpg);
+}
+
+.sports-cat-icon {
+  background-image: url(../img/cats_thumb/cat_sports.jpg);
+}
+
+.history-cat-icon {
+  background-image: url(../img/cats_thumb/cat_history.jpg);
+}
+
+.war-cat-icon {
+  background-image: url(../img/cats_thumb/cat_war.png);
+}
+
+.all-cat-icon {
+  background-image: url(../img/cats_thumb/cat_grid.jpg);
+}
+
+.ink-cmu {
+  background-color: white;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 5px 2px rgb(221, 221, 221); */
+}
+
+.ink-cmu-1{
+
+  background-image: url(../img/site_img/community-hero.png);
+}
+.ink-cmu-2{
+
+  background-image: url(../img/site_img/community-regist.png);
+}
+
+.ink-cmu-cont {
+  position: absolute;
+  bottom: 0px;
+  background-color: white;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    white 0%,
+    rgba(255, 255, 255,1) 0%,
+    rgba(255, 255, 255,1) 20%,
+    rgba(255, 255, 255, 0.952) 55%,
+    rgba(255, 255, 255, 0.911) 60%,
+    rgba(255, 255, 255, 0.849) 65%,
+    rgba(255, 255, 255, 0.671) 80%,
+    rgba(255, 255, 255, 0.568) 85%,
+    rgba(255, 255, 255, 0.493) 87%,
+    rgba(255, 255, 255, 0.377) 89%,
+    rgba(255, 255, 255, 0.247) 90%,
+    rgba(255, 255, 255, 0.178) 95%,
+    transparent 100%
+
+  );
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.ink-cmu h4 {
+  padding-top: 40px !important;
+  /* font-weight: normal; */
+}
+
+.ink-cmu .slide-overlay {
+  background-color: rgba(8, 29, 42, 0.438);
+  border-radius: 10px;
 }

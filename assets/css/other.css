@@ -38,4 +38,6 @@
     box-shadow: none;
   }
 
-  
+  .ov-auto{
+    overflow: auto;
+  }
