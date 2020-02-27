@@ -202,7 +202,7 @@ p {
 }
 
 .preview-set {
-  background-color: #faf9fa;
+  background-color: #f9f9f9;
 }
 
 .ink-welcome-books {
@@ -381,4 +381,38 @@ p {
 .ink-cmu .slide-overlay {
   background-color: rgba(8, 29, 42, 0.438);
   border-radius: 10px;
+}
+
+.top-view img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.new-book-preview{
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.like-comment{
+  display: inline-block;
+  border-radius: 15px;
+  color: #6b737c;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.new-book-img {
+  width:35%;
+  padding: 10px;
+  position: relative;
+}
+
+.new-book-desc{
+  width: 65%;
+}
+
+.new-book-img img{
+  position: relative;
+  width: 100%;
 }

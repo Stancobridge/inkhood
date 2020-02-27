@@ -67,6 +67,15 @@
   .flex-center{
     align-items: center;
   }
+  .flex-top{
+    align-items: flex-start;
+  }
   .flex-space{
     justify-content: space-between;
   }
+
+  /* .top-view{
+
+  } */
+
+ 
