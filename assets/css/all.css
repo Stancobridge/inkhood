@@ -9,6 +9,8 @@ body {
   margin: 0%;
   padding: 0%;
   color: #383f46;
+  position: relative;
+  
 }
 
 a,
@@ -36,7 +38,7 @@ p {
   width: 100%;
   top: 0px;
   color: white;
-  overflow: auto;
+  z-index: 6;
 }
 
 .logo img {
@@ -47,6 +49,7 @@ p {
   list-style: none;
   margin: 0px;
   padding: 0px;
+  position: relative;
 }
 
 .ink-nav {
@@ -70,7 +73,7 @@ p {
 
 .constant-text {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   width: 100%;
   color: white;
 }
@@ -134,6 +137,7 @@ p {
 .slider-view {
   overflow-x: hidden !important;
   width: 100%;
+  pointer-events: none !important;
 }
 
 .slider-maxprarent {
@@ -141,6 +145,8 @@ p {
   position: relative;
   z-index: -5;
   animation: sliderHome 35s infinite;
+  pointer-events: none !important;
+
 }
 
 .slides-dot i:first-child {

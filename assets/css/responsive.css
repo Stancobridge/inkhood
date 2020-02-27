@@ -4,7 +4,7 @@
   }
 
   .nav-menu-mobile{
-    position: fixed;
+    position: absolute;
     top: 0px;
     right: -90%;
     background-color: rgb(236, 237, 238);
