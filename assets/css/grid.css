@@ -74,6 +74,18 @@
     justify-content: space-between;
   }
 
+
+  .flex-justify-stretch{
+    justify-content: stretch;
+  }
+
+  .flex-justify-center{
+    justify-content: center;
+  }
+
+  .flex-item-width{
+    flex-basis: 100%;
+  }
   /* .top-view{
 
   } */

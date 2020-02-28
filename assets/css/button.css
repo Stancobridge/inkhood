@@ -1,6 +1,6 @@
 .btn {
     border: none;
-    box-shadow: 0px 0px 2px 1px rgb(211, 162, 252);
+    box-shadow: 0px 0px 2px 1px rgb(240, 240, 240);
     border-radius: 6px;
     box-sizing: border-box;
     padding: .375rem .75rem;
@@ -42,4 +42,17 @@
   
   .btn-full {
     width: 100%;
+  }
+
+  .social-btn{
+    width: 90%;
+    margin: auto;
+    display: block;
+    box-shadow: 0 1px 2px rgba(0,0,0,.08), 0 1px 4px rgba(0,0,0,.12);
+  }
+
+  .facebook_icon, .google_icon{
+    height: 24px;
+    width: 24px;
+    margin-right: 15px;
   }

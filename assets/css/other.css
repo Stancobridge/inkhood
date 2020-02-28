@@ -41,3 +41,7 @@
   .ov-auto{
     overflow: auto;
   }
+
+  .push-content-header{
+    margin-top: 65px;
+  }
