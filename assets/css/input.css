@@ -28,3 +28,18 @@
 .select-field{
   font-size: 14px;
 }
+
+
+.search-input{
+  border-radius: 6px;
+  padding: 0px;
+  padding-right: 10px;
+  background-color: rgb(223, 222, 222);
+  font-size: 14px;
+  border: none;
+}
+
+.search-input:focus{
+  border-bottom: none;
+}
+

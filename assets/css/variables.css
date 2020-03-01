@@ -2,6 +2,7 @@
 :root{
   --primary-color: #3f1247;
   --primary-color-light: #9d18b4;
+  --primary-color-lighter: #63356971;
   --secondary-color: #761387;
   --warning-color: rgb(169, 224, 17);
   --link-color: black;
@@ -10,4 +11,6 @@
   --white-color: white;
   --dark-color: rgb(46, 46, 46);
   --input-field-color: #f8eafa;
+  --gray-color: rgb(236, 236, 236);
+  --dark-gray-color: rgb(212, 212, 212);
 }
