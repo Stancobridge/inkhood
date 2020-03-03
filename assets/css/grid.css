@@ -11,6 +11,15 @@
     grid-gap: 4px;
   }
 
+  .g-gap-6 {
+    grid-gap: 6px;
+  }
+
+  .g-gap-8 {
+    grid-gap: 8px;
+  }
+
+
   .grid-30-30-30{
     grid-template-columns: repeat(3, 90%);
   }
@@ -45,7 +54,9 @@
   .g-col-4-1{
     grid-template-columns: 80% 20%;
   }
-  
+  .grid-col-12{
+    grid-template-columns: repeat(11, 23%);
+  }
   
   
   .justify-center {

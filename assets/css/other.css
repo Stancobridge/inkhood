@@ -42,6 +42,12 @@
     overflow: auto;
   }
 
-  .push-content-header{
-    margin-top: 65px;
+  .ov-hidden{
+    overflow: hidden;
   }
+
+  .push-content-header{
+    margin-top: 40px;
+  }
+
+  
