@@ -22,6 +22,12 @@
     margin-right: auto;
   }
 
+  .account-wrapper{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
   .book-show{
     height: 150px;
     background-size: cover;
@@ -39,7 +45,18 @@
   .book-show-img-3{
     background-image: url(../img/book_show_3.jpg);
   }
-
-  
 }
 
+@media screen and (max-width: 366px) {
+  .f-feed-image img {
+    border-radius: 6px;
+    width: 100%;
+    height: 90px;
+  }
+
+  .book-wallpaper{
+    height: 220px;
+  }
+
+
+}

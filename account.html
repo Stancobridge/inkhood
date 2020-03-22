@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="" />
-    <title>Login InkHood.org</title>
+    <title>Book Feed InkHood.org</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- font awesome link -->
     <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.css" />
+    <!-- Font-awesome -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
   </head>
   <body>
     <!-- Sticky Header Starts Here -->
@@ -18,67 +21,409 @@
             <font size="4" color="#3f1247">InkHood</font>
           </div>
           <div style="flex-basis: 100%; margin-left: 6px !important;">
-            <input type="text" class="form-field search-input ts-14 p-2 pl-10" placeholder="Search">
+            <input
+              type="text"
+              class="form-field search-input ts-14 "
+              placeholder="Search"
+            />
           </div>
-               
         </nav>
       </div>
     </header>
     <!-- Sticky Header Ends Here -->
     <div class="push-content-header"></div>
     <section class="page-content">
-     <section class="ov-hidden">
-      <div class="cat-user grid grid-col-12 g-gap-8 ov-auto p-6" style="justify-items: center">
-        
-        <div class="cat-slide p-2 t-center">
-          <div class="cat-img ov-hidden">
-            <img src="./assets/img/cats_thumb/cat_romance.jpg" alt="">
+      <section class="ov-hidden">
+        <div
+          class="cat-user grid grid-col-12 g-gap-8 ov-auto p-6 pt-20
+      pb-10"
+          style="justify-items: center"
+        >
+          <div class="cat-slide p-2 t-center p-r">
+            <div class="cat-img ov-hidden">
+              <img src="./assets/img/cats_thumb/cat_romance.jpg" alt="" />
+            </div>
+            <i class="fas fa-check add-icon pt-6"></i>
+            <button class="btn btn-gray p-1 pr-4 pl-4 mt-10">Romance</button>
           </div>
-          <button class="btn btn-gray p-1 pr-8 pl-8">Romance</button>
-        </div>
 
-        <div class="cat-slide p-2 t-center">
-          <div class="cat-img ov-hidden">
-            <img src="./assets/img/cats_thumb/cat_war.png" alt="">
+          <div class="cat-slide p-2 t-center p-r">
+            <div class="cat-img ov-hidden">
+              <img src="./assets/img/cats_thumb/cat_war.png" alt="" />
+            </div>
+            <i class="fas fa-plus add-icon pt-6"></i>
+            <button class="btn btn-gray p-1 pr-4 pl-4 mt-10">War</button>
           </div>
-          <button class="btn btn-gray p-1 pr-8 pl-8">War</button>
-        </div>
 
-        <div class="cat-slide p-2 t-center">
-          <div class="cat-img ov-hidden">
-            <img src="./assets/img/cats_thumb/cat_comedy.jpg" alt="">
+          <div class="cat-slide p-2 t-center  p-r">
+            <div class="cat-img ov-hidden">
+              <img src="./assets/img/cats_thumb/cat_comedy.jpg" alt="" />
+            </div>
+            <i class="fas fa-check add-icon pt-6"></i>
+            <button class="btn btn-gray p-1 pr-4 pl-4 mt-10">Comedy</button>
           </div>
-          <button class="btn btn-gray p-1 pr-8 pl-8">Comedy</button>
-        </div>
 
-        <div class="cat-slide p-2 t-center">
-          <div class="cat-img ov-hidden">
-            <img src="./assets/img/cats_thumb/cat_history.jpg" alt="">
+          <div class="cat-slide p-2 t-center p-r">
+            <div class="cat-img ov-hidden">
+              <img src="./assets/img/cats_thumb/cat_history.jpg" alt="" />
+            </div>
+            <i class="fas fa-plus add-icon pt-6"></i>
+            <button class="btn btn-gray p-1 pr-4 pl-4 mt-10">History</button>
           </div>
-          <button class="btn btn-gray p-1 pr-8 pl-8">History</button>
-        </div>
-        <div class="cat-slide p-2 t-center">
-          <div class="cat-img ov-hidden">
-            <img src="./assets/img/cats_thumb/cat_scifi.jpg" alt="">
+          <div class="cat-slide p-2 t-center p-r">
+            <div class="cat-img ov-hidden">
+              <img src="./assets/img/cats_thumb/cat_scifi.jpg" alt="" />
+            </div>
+            <i class="fas fa-plus add-icon pt-6"></i>
+            <button class="btn btn-gray p-1 pr-4 pl-4 mt-10">Sci-fi</button>
           </div>
-          <button class="btn btn-gray p-1 pr-8 pl-8">Sci-fi</button>
-        </div>
-      
-        <div class="cat-slide p-2 t-center">
-          <div class="cat-img ov-hidden">
-            <img src="./assets/img/cats_thumb/cat_magical.jpg" alt="">
+
+          <div class="cat-slide p-2 t-center p-r">
+            <div class="cat-img ov-hidden">
+              <img src="./assets/img/cats_thumb/cat_magical.jpg" alt="" />
+            </div>
+            <i class="fas fa-check add-icon pt-6"></i>
+            <button class="btn btn-gray p-1 pr-4 pl-4 mt-10">Magic</button>
           </div>
-          <button class="btn btn-gray p-1 pr-8 pl-8">Magic</button>
-        </div>
-        <div class="cat-slide p-2 t-center">
-          <div class="cat-img ov-hidden">
-            <img src="./assets/img/cats_thumb/cat_sports.jpg" alt="">
+          <div class="cat-slide p-2 t-center p-r">
+            <div class="cat-img ov-hidden">
+              <img src="./assets/img/cats_thumb/cat_sports.jpg" alt="" />
+            </div>
+            <i class="fas fa-plus add-icon pt-6"></i>
+            <button class="btn btn-gray p-1 pr-4 pl-4 mt-10">Sports</button>
           </div>
-          <button class="btn btn-gray p-1 pr-8 pl-8">Sports</button>
         </div>
-      </div>
-     </section>
+      </section>
     </section>
+
+    <section class="firs-book-list-feeed">
+
+
+      <div class="first-feed mt-10 account-wrapper">
+        <div class="book-wallpaper book-wp2">
+
+        </div>
+        <div class="feed-cont grid g-col-1-4 g-gap-8 p-10">
+          <div class="fee-thumb-cont t-center m-0 p-0">
+            <div class="f-feed-image">
+              <img src="/assets/img/books_thumb/book7.jpg" srcset="">
+            <div class="ts-12">
+            <span class="badge badge-gray p-4 pt-2 pb-2">War</span>
+            </div>
+            </div>
+          </div>
+          <div class="feed-desc">
+            <h3 class="ts-16 mt-20">In th Part of Wisdom you will never miss</h3>
+            <p class="ts-14">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, blanditiis?
+            </p>
+            <div class="like-comment p-4 pl-10 pr-10 ts-14">
+              <span class="thump-up pr-14">
+                <i class="fas fa-thumbs-up"></i>
+              </span>
+              <span class="thumb-count">433</span>
+              <span class="thump-down pl-14">
+                <i class="fas fa-thumbs-down"></i>
+              </span>
+            </div>
+            <span class="t-center m-0 pl-20">
+              <span class="ts-13">
+                <i class="far fa-comment"></i>
+                73.1k
+              </span>
+            </div>
+          </div>
+        </div>
+
+
+      <div class="first-feed mt-10 account-wrapper">
+        <div class="book-wallpaper book-wp1">
+
+        </div>
+        <div class="feed-cont grid g-col-1-4 g-gap-8 p-10">
+          <div class="fee-thumb-cont t-center m-0 p-0">
+            <div class="f-feed-image">
+              <img src="/assets/img/books_thumb/book4.jpg" srcset="">
+            <div class="ts-12">
+              <span class="badge badge-gray p-4 pt-2 pb-2">
+                Romantic
+              </span>
+            </div>
+            </div>
+          </div>
+          <div class="feed-desc">
+            <h3 class="ts-16 mt-20">In th Part of Wisdom you will never miss</h3>
+            <p class="ts-14">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, blanditiis?
+            </p>
+            <div class="like-comment p-4 pl-10 pr-10 ts-14">
+              <span class="thump-up pr-14">
+                <i class="fas fa-thumbs-up"></i>
+              </span>
+              <span class="thumb-count">433</span>
+              <span class="thump-down pl-14">
+                <i class="fas fa-thumbs-down"></i>
+              </span>
+            </div>
+            <span class="t-center m-0 pl-20">
+              <span class="ts-13">
+                <i class="far fa-comment"></i>
+                73.1k
+              </span>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="first-feed mt-10 account-wrapper">
+          <div class="book-wallpaper book-wp2">
+
+          </div>
+          <div class="feed-cont grid g-col-1-4 g-gap-8 p-10">
+            <div class="fee-thumb-cont t-center m-0 p-0">
+              <div class="f-feed-image">
+                <img src="/assets/img/books_thumb/book7.jpg" srcset="">
+              <div class="ts-12">
+              <span class="badge badge-gray p-4 pt-2 pb-2">War</span>
+              </div>
+              </div>
+            </div>
+            <div class="feed-desc">
+              <h3 class="ts-16 mt-20">In th Part of Wisdom you will never miss</h3>
+              <p class="ts-14">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, blanditiis?
+              </p>
+              <div class="like-comment p-4 pl-10 pr-10 ts-14">
+                <span class="thump-up pr-14">
+                  <i class="fas fa-thumbs-up"></i>
+                </span>
+                <span class="thumb-count">433</span>
+                <span class="thump-down pl-14">
+                  <i class="fas fa-thumbs-down"></i>
+                </span>
+              </div>
+              <span class="t-center m-0 pl-20">
+                <span class="ts-13">
+                  <i class="far fa-comment"></i>
+                  73.1k
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+      </div>
+
+
+    </section>
+
+
+    <section class="preview-set mt-10 pt-30 mb-40">
+      <div class="wrapper">
+        <div class="cat-title mb-20">
+          <h5>
+            <i class="fas fa-user-tag pr-3"></i>
+            Recommended
+          </h5>
+        </div>
+        <!-- Top Picks Book First Slide -->
+        <div class="top-pick-book mb-20">
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book2.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book3.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book4.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book5.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book6.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book7.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+        </div>
+        <div class="top-pick-book">
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book2.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book3.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book4.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book5.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book6.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book7.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+          <div class="feed-s-item">
+            <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
+            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+              <i class="fas fa-tags"></i>
+              drama</span>
+            <div class="preview-author flex flex-center">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
 
     <footer class="ts-14 t-center" id="account_footer">
       <div class="footer-tab flex flex-bottom flex-justify-center">
@@ -90,8 +435,7 @@
         </div>
         <div class="tab flex-item-width">
           <div class="middle-tab flex flex-center flex-justify-center">
-          <i class="fas fa-home"></i>
-
+            <i class="fas fa-home"></i>
           </div>
         </div>
         <div class="tab flex-item-width">
