@@ -1,39 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Author Bio</title>
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <div class="main-wrapper">
 
-        <!--This section contains author name, photo,
+      <!--This section contains author name, photo,
             followers and message box.-->
-        <section class="first-author-info_wrapper">
+      <section class="first-author-info_wrapper grid g-col-2-3">
+        <div class="cover-photo_container">
+            <div class="banner">
+                <img src="assets/img/author2.jpg" class="banner-cover"></img>
+                <img src="assets/img/author2.jpg" alt="" class="author-img">
+            </div>
+        </div>
 
-        </section>
-        <!-- first-author-info_wrapper ends here -->
+        <div class="desc_container pt-40 pb-40 ts-14">
+            <h1 class="ts-18">Javascript teacher</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing
+            </p>
+            <div class="contact-wrapper">
+                <a href="#" class="follow pl-18 pr-18"><i class="fas fa-user-plus ts-16"></i> follow</a>
+                <a href="#" class="message"><i class="fas fa-envelope ts-16"></i></a>
+            </div>
+        </div>
+      </section>
+      <!-- first-author-info_wrapper ends here -->
 
-
-        <!--This section contains total books writen
+      <!--This section contains total books writen
             by an author, Total Reads and people following.-->
-        <section class="second-author-info_wrapper"></section>
-        <!-- second-author-info_wrapper ends here -->
+      <section class="second-author-info_wrapper grid g-col-3 ts-14">
+        <div class="books-container">
+          <span class="book-count">000</span>
+          <p>books</p>
+        </div>
+        <div class="read-container">
+          <span class="read-count">99999</span>
+          <p>total read</p>
+        </div>
+        
+        <div class="follow">
+          <span class="follow-count">999</span>
+          <p>follow</p>
+        </div>
+      </section>
+      <!-- second-author-info_wrapper ends here -->
 
-
-        <!--This section contains textarea box and 
+      <!--This section contains textarea box and 
             a button for author to make a post. -->
-        <section class="textarea-wrapper"></section>
-        <!-- textarea-wrapper ends here -->
+      <section class="textarea-wrapper">
+          <textarea name="textarea" id="textarea" cols=30 rows="8" placeholder="What's on your mind?">
+          </textarea>
+          <button class="post btn btn-full btn-primary ts-18">post <i class="fas fa-paper-plane"></i></button>
+      </section>
+      <!-- textarea-wrapper ends here -->
 
-
-        <!-- This section contains navigation links
+      <!-- This section contains navigation links
              books, wall and following-->
-        <section class="nav-wrapper"></section>
-        <!-- nav-wrapper ends here -->
+      <section class="nav-wrapper grid g-col-3 g-gap-8 ts-14">
+        <a href="#"><i class="fas fa-book"></i>books</a>
+        <a href="#"><i class="fas fa-clipboard-list"></i>wall</a>
+        <a href="#"><i class="fas fa-users"></i>following</a>
+      </section>
+      <!-- nav-wrapper ends here -->
+
+      <section class="author-book"></section>
+      <section class="author-wall"></section>
+      <section class="author-followin"></section>
     </div>
-</body>
+  </body>
 </html>
