@@ -55,24 +55,172 @@
       <!--This section contains textarea box and 
             a button for author to make a post. -->
       <section class="textarea-wrapper">
-          <textarea name="textarea" id="textarea" cols=30 rows="8" placeholder="What's on your mind?">
-          </textarea>
-          <button class="post btn btn-full btn-primary ts-18">post <i class="fas fa-paper-plane"></i></button>
+          <textarea name="textarea" id="textarea" cols=30 rows="3" placeholder="What's on your mind?"></textarea>
+          <button class="post btn btn-full btn-primary ts-14">post <i class="fas fa-paper-plane"></i></button>
       </section>
       <!-- textarea-wrapper ends here -->
 
       <!-- This section contains navigation links
              books, wall and following-->
-      <section class="nav-wrapper grid g-col-3 g-gap-8 ts-14">
+      <section class="nav-wrapper grid g-col-3 ts-14">
         <a href="#"><i class="fas fa-book"></i>books</a>
         <a href="#"><i class="fas fa-clipboard-list"></i>wall</a>
         <a href="#"><i class="fas fa-users"></i>following</a>
       </section>
       <!-- nav-wrapper ends here -->
 
-      <section class="author-book"></section>
-      <section class="author-wall"></section>
-      <section class="author-followin"></section>
+      <section class="author-book">
+        <h1 class="title ts-18">books written by javascript teacher</h1>
+        
+        <div class="first-feed mt-10 account-wrapper">
+          <div class="book-wallpaper book-wp1">
+  
+          </div>
+          <div class="feed-cont grid g-col-1-4 g-gap-8 p-10">
+            <div class="fee-thumb-cont t-center m-0 p-0">
+              <div class="f-feed-image">
+                <img src="/assets/img/books_thumb/book4.jpg" srcset="">
+              <div class="ts-12">
+                <span class="badge badge-gray p-4 pt-2 pb-2">
+                  Romantic
+                </span>
+              </div>
+              </div>
+            </div>
+            <div class="feed-desc">
+              <h3 class="ts-16 mt-20">In th Part of Wisdom you will never miss</h3>
+              <p class="ts-14">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, blanditiis?
+              </p>
+              <div class="like-comment p-4 pl-10 pr-10 ts-14">
+                <span class="thump-up pr-14">
+                  <i class="fas fa-thumbs-up"></i>
+                </span>
+                <span class="thumb-count">433</span>
+                <span class="thump-down pl-14">
+                  <i class="fas fa-thumbs-down"></i>
+                </span>
+              </div>
+              <span class="t-center m-0 pl-20">
+                <span class="ts-13">
+                  <i class="far fa-comment"></i>
+                  73.1k
+                </span>
+              </span></div>
+            </div>
+          </div>
+
+          <div class="first-feed mt-10 account-wrapper">
+            <div class="book-wallpaper book-wp2">
+    
+            </div>
+            <div class="feed-cont grid g-col-1-4 g-gap-8 p-10">
+              <div class="fee-thumb-cont t-center m-0 p-0">
+                <div class="f-feed-image">
+                  <img src="/assets/img/books_thumb/book7.jpg" srcset="">
+                <div class="ts-12">
+                <span class="badge badge-gray p-4 pt-2 pb-2">War</span>
+                </div>
+                </div>
+              </div>
+              <div class="feed-desc">
+                <h3 class="ts-16 mt-20">In th Part of Wisdom you will never miss</h3>
+                <p class="ts-14">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, blanditiis?
+                </p>
+                <div class="like-comment p-4 pl-10 pr-10 ts-14">
+                  <span class="thump-up pr-14">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  <span class="thumb-count">433</span>
+                  <span class="thump-down pl-14">
+                    <i class="fas fa-thumbs-down"></i>
+                  </span>
+                </div>
+                <span class="t-center m-0 pl-20">
+                  <span class="ts-13">
+                    <i class="far fa-comment"></i>
+                    73.1k
+                  </span>
+                </span></div>
+              </div>
+            </div>
+      </section>
+      <!-- author-books ends here -->
+
+
+      <section class="author-wall">
+        <h1 class="title ts-18">posts by javascript teacher</h1>
+        <div class="post-wrapper">
+          <div class="post-img_container">
+            <div class="post-img"><img src="assets/img/author2.jpg" alt=""></div>
+          </div>
+
+          <div class="post-desc_container">
+            <p class="ts-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ab, optio in quae natus amet, doloribus sint fugiat eius accusamus velit tempore earum</p>
+            <p class="post-date ">20th march 2020</p>
+          </div>
+        </div>
+
+        <div class="post-wrapper">
+          <div class="post-img_container">
+            <div class="post-img"><img src="assets/img/author2.jpg" alt=""></div>
+          </div>
+
+          <div class="post-desc_container">
+            <p class="ts-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ab, optio in quae natus amet, doloribus sint fugiat eius accusamus velit tempore earum Lorem ipsum dolor sit amet.</p>
+            <p class="post-date ">19th march 2020</p>
+          </div>
+        </div>
+      </section>
+      <!-- author wall ends here -->
+
+
+
+      <section class="author-following">
+        <h1 class="title ts-18">authors followed by javascript teacher</h1>
+
+        <section class="first-author-info_wrapper grid g-col-2-3 mt-25 mb-40">
+          <div class="cover-photo_container">
+              <div class="banner">
+                  <!-- <img src="assets/img/author2.jpg" class="banner-cover"> -->
+                  <img src="assets/img/author2.jpg" alt="" class="author-img">
+              </div>
+          </div>
+  
+          <div class="desc_container ts-14">
+              <h1 class="ts-16">florin pop</h1>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing
+              </p>
+              <div class="contact-wrapper">
+                  <a href="#" class="follow pl-18 pr-18"><i class="fas fa-user-plus ts-16"></i> follow</a>
+                  <a href="#" class="message"><i class="fas fa-thumbs-up ts-16"></i></a>
+              </div>
+          </div>
+        </section>
+
+        <section class="first-author-info_wrapper grid g-col-2-3 mt-25 mb-40">
+          <div class="cover-photo_container">
+              <div class="banner">
+                  <!-- <img src="assets/img/author2.jpg" class="banner-cover"> -->
+                  <img src="assets/img/author2.jpg" alt="" class="author-img">
+              </div>
+          </div>
+  
+          <div class="desc_container ts-14">
+              <h1 class="ts-16">wes bos</h1>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing
+              </p>
+              <div class="contact-wrapper">
+                  <a href="#" class="follow pl-18 pr-18"><i class="fas fa-user-plus ts-16"></i> follow</a>
+                  <a href="#" class="message"><i class="fas fa-thumbs-up ts-16"></i></a>
+              </div>
+          </div>
+        </section>
+      </section>
+      <!-- author-following ends here -->
     </div>
   </body>
 </html>
