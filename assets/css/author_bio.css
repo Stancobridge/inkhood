@@ -171,7 +171,7 @@ span.read-count {
   padding: 10px;
 }
 .nav-wrapper a {
-  text-align: center;
+  /* text-align: center; */
   font-weight: bold;
   padding: 5px;
   text-transform: uppercase;
@@ -183,10 +183,15 @@ span.read-count {
   color: var(--primary-color-light);
   border-bottom: 2px solid var(--primary-color-light);
 }
+.nav-wrapper a:first-child {
+  color: var(--primary-color-light);
+  border-bottom: 2px solid var(--primary-color-light);
+}
 .nav-wrapper a i {
   line-height: normal;
   display: inline-block;
   margin-right: 4px;
+  margin-left: 4px;
 }
 
 section.author-book {
@@ -264,5 +269,10 @@ section.author-following {
 
 .author-following .first-author-info_wrapper {
   background-color: transparent;
-  box-shadow: 1px 1px 2px 0px var(--gray-color-dim);
+  box-shadow: 2px 2px 2px 0px var(--gray-color),-1px -1px 2px 0px var(--dark-gray-color);
+}
+.author-following .contact-wrapper .follow,
+.author-following .contact-wrapper .message{
+  box-shadow: none;
+  border: 1px solid var(--dark-gray-color);
 }
