@@ -2,6 +2,9 @@
   height: 100vh;
 }
 
+.w-full {
+  width: 100%;
+}
 .d-block {
   display: block;
 }
@@ -52,6 +55,10 @@
 
 .p-r {
   position: relative;
+}
+
+.p-a{
+  position: absolute;
 }
 
 .badge {

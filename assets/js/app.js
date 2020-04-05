@@ -13,13 +13,13 @@ let mobileNavMenu = document.querySelector(".nav-menu-mobile");
 let openNav = document.querySelector("#opennav");
 let closenav = document.querySelector("#closenav")
 
-// closenav.addEventListener("click", () => {
-//   toggleClass(mobileNavMenu, "show-mobile-nav", "close-mobile-nav");
-// });
+closenav.addEventListener("click", () => {
+  toggleClass(mobileNavMenu, "show-mobile-nav", "close-mobile-nav");
+});
 
-// openNav.addEventListener("click", () => {
-//   toggleClass(mobileNavMenu, "show-mobile-nav", "close-mobile-nav");
-// });
+openNav.addEventListener("click", () => {
+  toggleClass(mobileNavMenu, "show-mobile-nav", "close-mobile-nav");
+});
 
 let elipse = document.querySelector('.elipse')
 let dropMenu = document.querySelector('.drop-menu');
