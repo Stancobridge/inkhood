@@ -42,6 +42,9 @@
     grid-template-columns: repeat(3, 1fr);
   }
   
+  .g-col-5-2s{
+    grid-template-columns: 3fr 2fr repeat(2,1fr)
+  }
 
   .g-col-2-slide {
     grid-template-columns: 55% 45%;
@@ -126,5 +129,13 @@
   /* .top-view{
 
   } */
+
+ .flex-same-width > *{
+  flex-grow: 1;
+  width: 100%;
+  padding: 0px;
+ }
+
+ /* Pc Grid */
 
  

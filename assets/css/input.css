@@ -27,7 +27,15 @@
 .select-field {
   font-size: 14px;
 }
-
+.select-field-theme{
+  outline: none;
+  border: none;
+  background-color: rgb(243, 243, 243);
+  font-style: inherit;
+}
+option{
+  font-style: inherit !important;
+}
 .search-input {
   border-radius: 6px;
   padding: 0px;
@@ -43,4 +51,23 @@
 
 .search-input:focus {
   border-bottom: none;
+}
+
+
+.form-field-theme{
+  border: none;
+  outline: none;
+}
+
+.read-form{
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.read-font-size{
+  width: 60%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  text-align: center;
 }

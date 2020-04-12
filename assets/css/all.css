@@ -794,3 +794,31 @@ p {
 .table_content_heading{
   border-bottom: 1px dashed rgb(184, 184, 184);
 }
+
+.font-family, .font-size{
+  background-color: rgb(243, 243, 243);
+
+}
+
+.font-size{
+
+}
+
+.reader-settings-icons >*{
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.read-book-title{
+  font-style: italic;
+}
+
+.title-name{
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 15px;
+  margin: 0px;
+  display: inline;
+  border-bottom: 1px dashed gray;
+}
