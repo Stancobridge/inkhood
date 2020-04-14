@@ -69,9 +69,12 @@
     grid-template-columns: 35% 65%;
 
   }
+.g-col-5-2 {
+  grid-template-columns: 65% 35%;
+}
 
-  .g-col-2-3{
-    grid-template-columns: 40% 60%;
+  .g-col-3-2{
+    grid-template-columns: 60% 40%;
   }
 
   .g-col-4-1{

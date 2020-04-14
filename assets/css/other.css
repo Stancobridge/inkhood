@@ -86,3 +86,7 @@
 .t-primary{
   color: var(--primary-color)
 }
+
+.t-faint{
+  color: #6f6f6f;
+}
