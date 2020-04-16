@@ -194,10 +194,6 @@
     font-size: inherit;
   }
 
-  .pc-login-form:focus {
-    /* border-bottom: 4px solid rgb(48, 30, 65);; */
-  }
-
   .btn {
     /* box-shadow: none !important; */
     border-radius: 0px;
@@ -288,11 +284,11 @@
       0 7px 10px 1px rgba(34, 34, 34, 0.1);
   }
 
-  .preview-set{
+  .preview-set {
     background-color: white;
   }
 
-  .scroll-book .far{
+  .scroll-book .far {
     color: rgb(102, 102, 102);
   }
 
@@ -303,10 +299,62 @@
     box-shadow: -6px 6px 5px 0px rgb(212, 212, 212);
     border-radius: 6px;
     height: 170%;
-}
-}
+  }
 
+  .list-cats {
+    grid-template-columns: repeat(6, 1fr);
+    overflow: hidden;
+  }
+
+  .pc-book-cat-section {
+    background-image: url(../img/cats_thumb/cat_wall.jpeg);
+    /* background-color: rgba(8, 29, 42); */
+  }
+  .pc-book-cat-section > .slide-overlay {
+    padding-top: 4px;
+    padding-bottom: 50px;
+    background-color: rgba(8, 29, 42, 0.911);
+  }
+
+  .main-right-new-books {
+    padding: 10px;
+  }
+  .main-right-new-books,
+  .main-right-new-books .preview-set {
+    background-color: #f1f1f1;
+  }
+
+  
+  
+}
 .pc-wrapper {
   max-width: 1280px;
   margin: auto;
+}
+.book-list-thumb img{
+  width: 100%;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.img-round{
+  width: 80%;
+  transform: rotate(-5deg);
+  box-shadow: 0px 0px 5px gray;
+  border-radius: 5px;
+  -ms-transform: rotate(-5deg); /* IE 9 */
+  -webkit-transform: rotate(-5deg); /* Safari and Chrome */
+  -o-transform: rotate(-5deg); /* Opera */
+  -moz-transform: rotate(-5deg); 
+  /* display: inline; */
+  transition: 0.3s ease;
+  margin: auto;
+}
+
+.img-round:hover{
+  transform: rotate(0);
+  -ms-transform: rotate(0); /* IE 9 */
+  -webkit-transform: rotate(0); /* Safari and Chrome */
+  -o-transform: rotate(0); /* Opera */
+  -moz-transform: rotate(0); 
 }

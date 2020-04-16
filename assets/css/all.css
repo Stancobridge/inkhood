@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
 }
 img {
   vertical-align: middle;
@@ -800,9 +801,6 @@ p {
 
 }
 
-.font-size{
-
-}
 
 .reader-settings-icons >*{
   padding: 6px;

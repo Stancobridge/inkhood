@@ -90,3 +90,14 @@
 .t-faint{
   color: #6f6f6f;
 }
+
+.t-light{
+  color: white;
+}
+.t-no-weight{
+  font-weight: lighter;
+}
+
+.t-italic{
+  font-style: italic;
+}
