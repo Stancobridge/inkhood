@@ -8,832 +8,999 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- font awesome link -->
     <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.css" />
-    <!-- Font-awesome -->
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
   </head>
   <body>
     <!-- Sticky Header Starts Here -->
-    <header class="nav-bar" id="header-light">
-      <div class="p-6">
-        <nav class="nav ink-nav flex-center">
-          <div class="logo">InKd</div>
-          <div class="search p-r"  style="flex-basis: 100%; margin-left: 6px !important;">
-            <div class="p-a icon-svg">
-              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16 fa-fw"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" class=""></path></svg>
-            </div>
-            <input type="text" class="w-full search-input pl-10 ts-14" placeholder="Search book...">
-          </div>
+    <div class="pc-wrapper-account pc-grid g-col-2-4-2 g-gap-8">
+      <div class="account-left m-none sticky"  style="height: 230px; overflow:visible">
+        <div class="account-logo t-center">
+          <img src="./assets/img/logos/logo.png" class="w-full" alt="">
+        </div>
+        <nav class="pc-left-navbar">
+          <ul>
+            <li>
+              <a href="">
+                <i class="fas fa-heartbeat"></i>
+                Discover
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fas fa-book-reader"></i>
+                Library
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fas fa-coins"></i>
+                Coins
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fas fa-user"></i>
+                Profile
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fas fa-user-cog"></i>
+                settings
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
-    </header>
-    <!-- Sticky Header Ends Here -->
-    <div class="push-content-header"></div>
-    <section class="page-content">
-      <section class="ov-hidden">
-        <div
-          class="cat-user grid grid-col-12 g-gap-8 ov-auto p-6 pt-20
-      pb-10"
-          style="justify-items: center"
+      <div class="account-main p-r" style="width: 100%;">
+        <header
+          class="nav-bar pc-mb-20"
+          id="header-light"
+          style="width: inherit !important;"
         >
-          <div class="cat-slide p-2 t-center p-r">
-            <div class="cat-img ov-hidden">
-              <img src="./assets/img/cats_thumb/cat_romance.jpg" alt="" />
-            </div>
-            <i class="fas fa-check add-icon pt-6"></i>
-            <button class="btn btn-gray p-1 pr-4 pl-4 mt-10">Romance</button>
-          </div>
-
-          <div class="cat-slide p-2 t-center p-r">
-            <div class="cat-img ov-hidden">
-              <img src="./assets/img/cats_thumb/cat_war.png" alt="" />
-            </div>
-            <i class="fas fa-plus add-icon pt-6"></i>
-            <button class="btn btn-gray p-1 pr-4 pl-4 mt-10">War</button>
-          </div>
-
-          <div class="cat-slide p-2 t-center  p-r">
-            <div class="cat-img ov-hidden">
-              <img src="./assets/img/cats_thumb/cat_comedy.jpg" alt="" />
-            </div>
-            <i class="fas fa-check add-icon pt-6"></i>
-            <button class="btn btn-gray p-1 pr-4 pl-4 mt-10">Comedy</button>
-          </div>
-
-          <div class="cat-slide p-2 t-center p-r">
-            <div class="cat-img ov-hidden">
-              <img src="./assets/img/cats_thumb/cat_history.jpg" alt="" />
-            </div>
-            <i class="fas fa-plus add-icon pt-6"></i>
-            <button class="btn btn-gray p-1 pr-4 pl-4 mt-10">History</button>
-          </div>
-          <div class="cat-slide p-2 t-center p-r">
-            <div class="cat-img ov-hidden">
-              <img src="./assets/img/cats_thumb/cat_scifi.jpg" alt="" />
-            </div>
-            <i class="fas fa-plus add-icon pt-6"></i>
-            <button class="btn btn-gray p-1 pr-4 pl-4 mt-10">Sci-fi</button>
-          </div>
-
-          <div class="cat-slide p-2 t-center p-r">
-            <div class="cat-img ov-hidden">
-              <img src="./assets/img/cats_thumb/cat_magical.jpg" alt="" />
-            </div>
-            <i class="fas fa-check add-icon pt-6"></i>
-            <button class="btn btn-gray p-1 pr-4 pl-4 mt-10">Magic</button>
-          </div>
-          <div class="cat-slide p-2 t-center p-r">
-            <div class="cat-img ov-hidden">
-              <img src="./assets/img/cats_thumb/cat_sports.jpg" alt="" />
-            </div>
-            <i class="fas fa-plus add-icon pt-6"></i>
-            <button class="btn btn-gray p-1 pr-4 pl-4 mt-10">Sports</button>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <section class="firs-book-list-feeed">
-
-
-      <div class="first-feed mt-10 account-wrapper">
-        <div class="book-wallpaper book-wp2">
-
-        </div>
-        <div class="feed-cont grid g-col-1-4 g-gap-8 p-10">
-          <div class="fee-thumb-cont t-center m-0 p-0">
-            <div class="f-feed-image">
-              <img src="/assets/img/books_thumb/book7.jpg" srcset="">
-            <div class="ts-12" style="position: relative; bottom: 0px;">
-            <span class="badge badge-gray p-4 pt-2 pb-2">War</span> 
-            </div>
-            </div>
-          </div>
-          <div class="feed-desc">
-            <h3 class="ts-16 mt-20">In th Part of Wisdom you will never miss</h3>
-            <p class="ts-14">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, blanditiis?
-            </p>
-            <div class="like-comment p-4 pl-10 pr-10 ts-14">
-              <span class="thump-up pr-14">
-                <i class="fas fa-thumbs-up"></i>
-              </span>
-              <span class="thumb-count">433</span>
-              <span class="thump-down pl-14">
-                <i class="fas fa-thumbs-down"></i>
-              </span>
-            </div>
-            <span class="t-center m-0 pl-20">
-              <span class="ts-13">
-                <i class="far fa-comment"></i>
-                73.1k
-              </span>
-              </span>
-
-
-              <span class="pull-right mr-30">
-                <i class="fas fa-ellipsis-v"></i>
-                </span>
-            </div>
-          </div>
-        </div>
-
-
-      <div class="first-feed mt-10 account-wrapper">
-        <div class="book-wallpaper book-wp1">
-
-        </div>
-        <div class="feed-cont grid g-col-1-4 g-gap-8 p-10">
-          <div class="fee-thumb-cont t-center m-0 p-0">
-            <div class="f-feed-image">
-              <img src="/assets/img/books_thumb/book4.jpg" srcset="">
-            <div class="ts-12">
-              <span class="badge badge-gray p-4 pt-2 pb-2">
-                Romantic
-              </span>
-            </div>
-            </div>
-          </div>
-          <div class="feed-desc">
-            <h3 class="ts-16 mt-20 font-icon">In th Part of Wisdom you will never miss</h3>
-            <p class="ts-14">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, blanditiis?
-            </p>
-            <div class="like-comment p-4 pl-10 pr-10 ts-14">
-              <span class="thump-up pr-14">
-                <i class="fas fa-thumbs-up"></i>
-              </span>
-              <span class="thumb-count">433</span>
-              <span class="thump-down pl-14">
-                <i class="fas fa-thumbs-down"></i>
-              </span>
-            </div>
-            <span class="t-center m-0 pl-20">
-              <span class="ts-13">
-                <i class="far fa-comment"></i>
-                73.1k
-              </span>
-            </span>
-
-
-            <span class="pull-right mr-30 p-r">
-              <i class="fas fa-ellipsis-v elipse"></i>
-              <ul class="drop-menu ts-14">
-                <li> <i class="fas fa-bookmark p-10"></i> Add to Library</li>
-                <li> <i class="fas fa-plus p-10"></i> Follow Author</li>
-                <li> <i class="fas fa-exclamation-circle p-10"></i> Report</li>
-                <li> <i class="fas fa-book-open p-10"></i> Read</li>
-              </ul>
-            </span>
-
-
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="first-feed mt-10 account-wrapper">
-          <div class="book-wallpaper book-wp2">
-
-          </div>
-          <div class="feed-cont grid g-col-1-4 g-gap-8 p-10">
-            <div class="fee-thumb-cont t-center m-0 p-0">
-              <div class="f-feed-image">
-                <img src="/assets/img/books_thumb/book7.jpg" srcset="">
-              <div class="ts-12">
-              <span class="badge badge-gray p-4 pt-2 pb-2">War</span>
+          <div class="p-6 pc-p-0 pc-pb-10">
+            <nav class="nav ink-nav flex-center">
+              <div class="logo pc-d-none">InKd</div>
+              <div class="search p-r">
+                <div class="p-a icon-svg">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="search"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="svg-inline--fa fa-search fa-w-16 fa-fw"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                      class=""
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  type="text"
+                  class="w-full search-input pl-10 ts-14"
+                  placeholder="Search book..."
+                />
               </div>
+            </nav>
+          </div>
+        </header>
+
+        <section class="page-content pc-p-10">
+          <section>
+            <div
+              class="cat-user grid grid-col-12 g-gap-8 ov-auto p-6 pt-20 pb-10"
+              style="justify-items: center;"
+            >
+              <div class="cat-slide p-2 t-center p-r">
+                <div class="cat-img ov-hidden">
+                  <img src="./assets/img/cats_thumb/cat_romance.jpg" alt="" />
+                </div>
+                <i class="fas fa-check add-icon pt-6"></i>
+                <button class="btn btn-gray p-1 pr-4 pl-4 mt-10 pc-cat-btn">
+                  Romance
+                </button>
+              </div>
+
+              <div class="cat-slide p-2 t-center p-r">
+                <div class="cat-img ov-hidden">
+                  <img src="./assets/img/cats_thumb/cat_war.png" alt="" />
+                </div>
+                <i class="fas fa-plus add-icon pt-6"></i>
+                <button class="btn btn-gray p-1 pr-4 pl-4 mt-10 pc-cat-btn">
+                  War
+                </button>
+              </div>
+
+              <div class="cat-slide p-2 t-center p-r">
+                <div class="cat-img ov-hidden">
+                  <img src="./assets/img/cats_thumb/cat_comedy.jpg" alt="" />
+                </div>
+                <i class="fas fa-check add-icon pt-6"></i>
+                <button class="btn btn-gray p-1 pr-4 pl-4 mt-10 pc-cat-btn">
+                  Comedy
+                </button>
+              </div>
+
+              <div class="cat-slide p-2 t-center p-r">
+                <div class="cat-img ov-hidden">
+                  <img src="./assets/img/cats_thumb/cat_history.jpg" alt="" />
+                </div>
+                <i class="fas fa-plus add-icon pt-6"></i>
+                <button class="btn btn-gray p-1 pr-4 pl-4 mt-10 pc-cat-btn">
+                  History
+                </button>
+              </div>
+              <div class="cat-slide p-2 t-center p-r">
+                <div class="cat-img ov-hidden">
+                  <img src="./assets/img/cats_thumb/cat_scifi.jpg" alt="" />
+                </div>
+                <i class="fas fa-plus add-icon pt-6"></i>
+                <button class="btn btn-gray p-1 pr-4 pl-4 mt-10 pc-cat-btn">
+                  Sci-fi
+                </button>
+              </div>
+
+              <div class="cat-slide p-2 t-center p-r">
+                <div class="cat-img ov-hidden">
+                  <img src="./assets/img/cats_thumb/cat_magical.jpg" alt="" />
+                </div>
+                <i class="fas fa-check add-icon pt-6"></i>
+                <button class="btn btn-gray p-1 pr-4 pl-4 mt-10 pc-cat-btn">
+                  Magic
+                </button>
+              </div>
+              <div class="cat-slide p-2 t-center p-r">
+                <div class="cat-img ov-hidden">
+                  <img src="./assets/img/cats_thumb/cat_sports.jpg" alt="" />
+                </div>
+                <i class="fas fa-plus add-icon pt-6"></i>
+                <button class="btn btn-gray p-1 pr-4 pl-4 mt-10 pc-cat-btn">
+                  Sports
+                </button>
               </div>
             </div>
-            <div class="feed-desc">
-              <h3 class="ts-16 mt-20">In th Part of Wisdom you will never miss</h3>
-              <p class="ts-14">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, blanditiis?
-              </p>
-              <div class="like-comment p-4 pl-10 pr-10 ts-14">
-                <span class="thump-up pr-14">
-                  <i class="fas fa-thumbs-up"></i>
-                </span>
-                <span class="thumb-count">433</span>
-                <span class="thump-down pl-14">
-                  <i class="fas fa-thumbs-down"></i>
-                </span>
-                
-              </div>
-              <span class="t-center m-0 pl-20">
-                <span class="ts-13">
-                  <i class="far fa-comment"></i>
-                  73.1k
-                </span>
-              </span>
-              <span class="pull-right mr-30">
-              <i class="fas fa-ellipsis-v"></i>
-              </span>
-              </div>
-            </div>
-          </div>
+          </section>
+        </section>
 
-
-
-
-
-
-      </div>
-
-
-    </section>
-
-
-    <section class="preview-set mt-10 pt-30 mb-40">
-      <div class="wrapper">
-        <div class="cat-title mb-20">
-          <h5>
-            <i class="fas fa-user-tag pr-3"></i>
-            Recommended
-          </h5>
-        </div>
-        <!-- Top Picks Book First Slide -->
-        <div class="top-pick-book mb-20">
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book2.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book3.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book4.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book5.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book6.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book7.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-        </div>
-        <div class="top-pick-book">
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book2.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book3.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book4.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book5.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book6.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book7.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-          <div class="feed-s-item">
-            <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
-            <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-              <i class="fas fa-tags"></i>
-              drama</span>
-            <div class="preview-author flex flex-center">
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <section class="page-contents">
-      <div class="pt-20 ink-welcome-books">
-        <div class="wrapper">
-          <h4 class="">
-            Top paid Stories
-          </h4>
-          <p class="m-0 ts-16">
-            30% off for every Purchase
-          </p>
-        </div>
-        <section class="preview">
-          <div class="wrapper top-book-preview grid g-col-3-1 p-6">
-            <div class="pb-20">
-              <h5>Lady and the Lamp wiith two</h5>
-              <div class="preview-author flex flex-center">
-                <img src="./assets/img/author1.png" alt="">
-                <strong class="ts-13 pl-6">Timileyin</strong>
-                <span class="ts-13 pl-10">
-                  <i class="fas fa-tags"></i> Science
-                </span>
-              </div>
-              <p class="ts-16 pb-20">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                consequuntur ratione ut optio natus?
-              </p>
-
-                
-
-                <div class="flex flex-space mr-30">
-                  <span class="t-center m-0">
-                    <span class="ts-13">
-                      <i class="far fa-comment"></i>
-                      73.1k
-                    </span>
-                  </span>
-
-                  <div class="like-comment t-center p-4 pl-6 pr-6 ts-14 m-auto book_thumb_like">
-                    <span class="thump-up pr-6">
-                      <i class="fas fa-thumbs-up"></i>
-                    </span>
-                    <span class="thumb-count">433</span>
-                    <span class="thump-down pl-6">
-                      <i class="fas fa-thumbs-down"></i>
-                    </span>
-  
+        <section class="firs-book-list-feeed pc-p-10">
+          <div class="first-feed mt-10 account-wrapper">
+            <div class="book-wallpaper book-wp2"></div>
+            <div class="feed-cont grid g-col-1-4 g-gap-8 p-10">
+              <div class="fee-thumb-cont t-center m-0 p-0">
+                <div class="f-feed-image">
+                  <img src="/assets/img/books_thumb/book7.jpg" srcset="" />
+                  <div class="ts-12" style="position: relative; bottom: 0px;">
+                    <span class="badge badge-gray p-4 pt-2 pb-2">War</span>
                   </div>
-
-
-
-
-                <span class="p-r">
-                  <i class="fas fa-ellipsis-v elipse"></i>
-                  <ul class="drop-menu ts-14">
-                    <li> <i class="fas fa-bookmark p-10"></i> Add to Library</li>
-                    <li> <i class="fas fa-plus p-10"></i> Follow Author</li>
-                    <li> <i class="fas fa-exclamation-circle p-10"></i> Report</li>
-                    <li> <i class="fas fa-book-open p-10"></i> Read</li>
-                  </ul>
+                </div>
+              </div>
+              <div class="feed-desc">
+                <h3 class="ts-16 mt-20">
+                  In th Part of Wisdom you will never miss
+                </h3>
+                <p class="ts-14">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, blanditiis?
+                </p>
+                <div class="like-comment p-4 pl-10 pr-10 ts-14">
+                  <span class="thump-up pr-14">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  <span class="thumb-count">433</span>
+                  <span class="thump-down pl-14">
+                    <i class="fas fa-thumbs-down"></i>
                   </span>
                 </div>
+                <span class="t-center m-0 pl-20">
+                  <span class="ts-13">
+                    <i class="far fa-comment"></i>
+                    73.1k
+                  </span>
+                </span>
 
-
-
+                <span class="pull-right mr-30">
+                  <i class="fas fa-ellipsis-v"></i>
+                </span>
+              </div>
             </div>
-            <div class="book_thumb t-center" style="position: relative;">
-              <img src="./assets/img/books_thumb/book10.jpg" alt="">
-              
+          </div>
+
+          <div class="first-feed mt-10 account-wrapper">
+            <div class="book-wallpaper book-wp1"></div>
+            <div class="feed-cont grid g-col-1-4 g-gap-8 p-10">
+              <div class="fee-thumb-cont t-center m-0 p-0">
+                <div class="f-feed-image">
+                  <img src="/assets/img/books_thumb/book4.jpg" srcset="" />
+                  <div class="ts-12">
+                    <span class="badge badge-gray p-4 pt-2 pb-2">
+                      Romantic
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="feed-desc">
+                <h3 class="ts-16 mt-20 font-icon">
+                  In th Part of Wisdom you will never miss
+                </h3>
+                <p class="ts-14">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, blanditiis?
+                </p>
+                <div class="like-comment p-4 pl-10 pr-10 ts-14">
+                  <span class="thump-up pr-14">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  <span class="thumb-count">433</span>
+                  <span class="thump-down pl-14">
+                    <i class="fas fa-thumbs-down"></i>
+                  </span>
+                </div>
+                <span class="t-center m-0 pl-20">
+                  <span class="ts-13">
+                    <i class="far fa-comment"></i>
+                    73.1k
+                  </span>
+                </span>
+
+                <span class="pull-right mr-30 p-r">
+                  <i class="fas fa-ellipsis-v elipse"></i>
+                  <ul class="drop-menu ts-14">
+                    <li><i class="fas fa-bookmark p-10"></i> Add to Library</li>
+                    <li><i class="fas fa-plus p-10"></i> Follow Author</li>
+                    <li>
+                      <i class="fas fa-exclamation-circle p-10"></i> Report
+                    </li>
+                    <li><i class="fas fa-book-open p-10"></i> Read</li>
+                  </ul>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="first-feed mt-10 account-wrapper">
+            <div class="book-wallpaper book-wp2"></div>
+            <div class="feed-cont grid g-col-1-4 g-gap-8 p-10">
+              <div class="fee-thumb-cont t-center m-0 p-0">
+                <div class="f-feed-image">
+                  <img src="/assets/img/books_thumb/book7.jpg" srcset="" />
+                  <div class="ts-12">
+                    <span class="badge badge-gray p-4 pt-2 pb-2">War</span>
+                  </div>
+                </div>
+              </div>
+              <div class="feed-desc">
+                <h3 class="ts-16 mt-20">
+                  In th Part of Wisdom you will never miss
+                </h3>
+                <p class="ts-14">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, blanditiis?
+                </p>
+                <div class="like-comment p-4 pl-10 pr-10 ts-14">
+                  <span class="thump-up pr-14">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  <span class="thumb-count">433</span>
+                  <span class="thump-down pl-14">
+                    <i class="fas fa-thumbs-down"></i>
+                  </span>
+                </div>
+                <span class="t-center m-0 pl-20">
+                  <span class="ts-13">
+                    <i class="far fa-comment"></i>
+                    73.1k
+                  </span>
+                </span>
+                <span class="pull-right mr-30">
+                  <i class="fas fa-ellipsis-v"></i>
+                </span>
+              </div>
             </div>
           </div>
         </section>
-      </div>
-    </section>
 
+        <section class="preview-set mt-10 pt-30 mb-40 pc-p-10">
+          <div class="wrapper">
+            <div class="cat-title mb-20">
+              <h5>
+                <i class="fas fa-user-tag pr-3"></i>
+                Recommended
+              </h5>
+            </div>
+            <!-- Top Picks Book First Slide -->
+            <div class="top-pick-book mb-20">
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book2.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
 
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book3.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
 
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book4.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
 
-    <section class="preview-set mt-10 pt-30 pb-20">
-      <div class="wrapper">
-        <div class="cat-title mb-20">
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book5.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
+
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book6.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
+
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book7.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
+
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book8.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
+
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book8.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
+
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book8.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
+
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book8.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
+            </div>
+            <div class="top-pick-book">
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book2.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
+
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book3.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
+
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book4.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
+
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book5.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
+
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book6.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
+
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book7.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
+
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book8.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
+
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book8.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
+
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book8.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
+
+              <div class="feed-s-item">
+                <img
+                  src="./assets/img/books_thumb/book8.jpg"
+                  class="thumb_img"
+                  alt=""
+                />
+                <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                  <i class="fas fa-tags"></i>
+                  drama</span
+                >
+                <div class="preview-author flex flex-center"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-contents">
+          <div class="pt-20 ink-welcome-books">
+            <div class="wrapper">
+              <h4 class="">
+                Top paid Stories
+              </h4>
+              <p class="m-0 ts-16">
+                30% off for every Purchase
+              </p>
+            </div>
+            <section class="preview">
+              <div class="wrapper top-book-preview grid g-col-3-1 p-6">
+                <div class="pb-20">
+                  <h5>Lady and the Lamp wiith two</h5>
+                  <div class="preview-author flex flex-center">
+                    <img src="./assets/img/author1.png" alt="" />
+                    <strong class="ts-13 pl-6">Timileyin</strong>
+                    <span class="ts-13 pl-10">
+                      <i class="fas fa-tags"></i> Science
+                    </span>
+                  </div>
+                  <p class="ts-16 pb-20">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Commodi consequuntur ratione ut optio natus?
+                  </p>
+
+                  <div class="flex flex-space mr-30">
+                    <span class="t-center m-0">
+                      <span class="ts-13">
+                        <i class="far fa-comment"></i>
+                        73.1k
+                      </span>
+                    </span>
+
+                    <div
+                      class="like-comment t-center p-4 pl-6 pr-6 ts-14 m-auto book_thumb_like"
+                    >
+                      <span class="thump-up pr-6">
+                        <i class="fas fa-thumbs-up"></i>
+                      </span>
+                      <span class="thumb-count">433</span>
+                      <span class="thump-down pl-6">
+                        <i class="fas fa-thumbs-down"></i>
+                      </span>
+                    </div>
+
+                    <span class="p-r">
+                      <i class="fas fa-ellipsis-v elipse"></i>
+                      <ul class="drop-menu ts-14">
+                        <li>
+                          <i class="fas fa-bookmark p-10"></i> Add to Library
+                        </li>
+                        <li><i class="fas fa-plus p-10"></i> Follow Author</li>
+                        <li>
+                          <i class="fas fa-exclamation-circle p-10"></i> Report
+                        </li>
+                        <li><i class="fas fa-book-open p-10"></i> Read</li>
+                      </ul>
+                    </span>
+                  </div>
+                </div>
+                <div class="book_thumb t-center" style="position: relative;">
+                  <img src="./assets/img/books_thumb/book10.jpg" alt="" />
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="preview-set mt-10 pt-30 pb-20 pc-p-10">
+          <div class="wrapper">
+            <div class="cat-title mb-20">
+              <h5>
+                <i class="fas fa-book pr-3"></i>
+                New Books for you
+              </h5>
+            </div>
+            <!-- Top Picks Book First Slide -->
+          </div>
+          <!-- first book section ends -->
+          <div class="new-books wrapper pc-grid g-col-2 g-gap-8">
+            <div class="new-book-preview ts-14 p-10 mb-10">
+              <div class="top-view flex flex-center">
+                <img src="./assets/img/author2.jpg" alt="" />
+                <span class="pl-6">Timileyin</span>
+
+                <span class="pl-15">(18 Books)</span>
+              </div>
+              <div class="new-book-cont flex flex-top">
+                <div class="new-book-desc">
+                  <h1 class="ts-15">
+                    New Visitors in the West from Jumanji Forest
+                  </h1>
+                  <span>
+                    <span class="pr-10">165 pages</span>
+                    <span>43 chapter</span>
+                  </span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Hic provident?
+                  </p>
+                  <div class="like-comment p-6 pl-14 pr-14">
+                    <span class="thump-up pr-14">
+                      <i class="fas fa-thumbs-up"></i>
+                    </span>
+                    <span class="thumb-count">433</span>
+                    <span class="thump-down pl-14">
+                      <i class="fas fa-thumbs-down"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="new-book-img">
+                  <img src="./assets/img/books_thumb/book6.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="new-book-preview ts-14 p-10 mb-10">
+              <div class="top-view flex flex-center">
+                <img src="./assets/img/author1.jpg" alt="" />
+                <span class="pl-6">Timileyin</span>
+
+                <span class="pl-15">(18 Books)</span>
+              </div>
+              <div class="new-book-cont flex flex-top">
+                <div class="new-book-desc">
+                  <h1 class="ts-15">
+                    New Visitors in the West from Jumanji Forest
+                  </h1>
+                  <span>
+                    <span class="pr-10">165 pages</span>
+                    <span>43 chapter</span>
+                  </span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Hic provident?
+                  </p>
+                  <div class="like-comment p-6 pl-14 pr-14">
+                    <span class="thump-up pr-14">
+                      <i class="fas fa-thumbs-up"></i>
+                    </span>
+                    <span class="thumb-count">433</span>
+                    <span class="thump-down pl-14">
+                      <i class="fas fa-thumbs-down"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="new-book-img">
+                  <img src="./assets/img/books_thumb/book7.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="new-book-preview ts-14 p-10 mb-10">
+              <div class="top-view flex flex-center">
+                <img src="./assets/img/author1.png" alt="" />
+                <span class="pl-6">Timileyin</span>
+
+                <span class="pl-15">(18 Books)</span>
+              </div>
+              <div class="new-book-cont flex flex-top">
+                <div class="new-book-desc">
+                  <h1 class="ts-15">
+                    New Visitors in the West from Jumanji Forest
+                  </h1>
+                  <span>
+                    <span class="pr-10">165 pages</span>
+                    <span>43 chapter</span>
+                  </span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Hic provident?
+                  </p>
+                  <div class="like-comment p-6 pl-14 pr-14">
+                    <span class="thump-up pr-14">
+                      <i class="fas fa-thumbs-up"></i>
+                    </span>
+                    <span class="thumb-count">433</span>
+                    <span class="thump-down pl-14">
+                      <i class="fas fa-thumbs-down"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="new-book-img">
+                  <img src="./assets/img/books_thumb/book9.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="wrapper preview-set mt-10 pt-30 mb-40 pc-p-10">
           <h5>
-            <i class="fas fa-book pr-3"></i>
-            New Books for you
+            <i class="fas fa-user-tag pr-3"></i>
+            You'll Also Like
           </h5>
-        </div>
-        <!-- Top Picks Book First Slide -->
-      </div>
-      <!-- first book section ends -->
-      <div class="new-books wrapper">
-        <div class="new-book-preview ts-14 p-10 mb-10">
-          <div class="top-view flex flex-center">
-            <img src="./assets/img/author2.jpg" alt="">
-            <span class="pl-6">Timileyin</span>
+          <div class="top-pick-book">
+            <div class="feed-s-item">
+              <img
+                src="./assets/img/books_thumb/book9.jpg"
+                class="thumb_img"
+                alt=""
+              />
+              <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                <i class="fas fa-tags"></i>
+                drama</span
+              >
+              <div class="preview-author flex flex-center"></div>
+            </div>
 
-            <span class="pl-15">(18 Books)</span>
+            <div class="feed-s-item">
+              <img
+                src="./assets/img/books_thumb/book11.jpg"
+                class="thumb_img"
+                alt=""
+              />
+              <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                <i class="fas fa-tags"></i>
+                drama</span
+              >
+              <div class="preview-author flex flex-center"></div>
+            </div>
+
+            <div class="feed-s-item">
+              <img
+                src="./assets/img/books_thumb/book7.jpg"
+                class="thumb_img"
+                alt=""
+              />
+              <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                <i class="fas fa-tags"></i>
+                drama</span
+              >
+              <div class="preview-author flex flex-center"></div>
+            </div>
+
+            <div class="feed-s-item">
+              <img
+                src="./assets/img/books_thumb/book5.jpg"
+                class="thumb_img"
+                alt=""
+              />
+              <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                <i class="fas fa-tags"></i>
+                drama</span
+              >
+              <div class="preview-author flex flex-center"></div>
+            </div>
+
+            <div class="feed-s-item">
+              <img
+                src="./assets/img/books_thumb/book6.jpg"
+                class="thumb_img"
+                alt=""
+              />
+              <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                <i class="fas fa-tags"></i>
+                drama</span
+              >
+              <div class="preview-author flex flex-center"></div>
+            </div>
+
+            <div class="feed-s-item">
+              <img
+                src="./assets/img/books_thumb/book7.jpg"
+                class="thumb_img"
+                alt=""
+              />
+              <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                <i class="fas fa-tags"></i>
+                drama</span
+              >
+              <div class="preview-author flex flex-center"></div>
+            </div>
+
+            <div class="feed-s-item">
+              <img
+                src="./assets/img/books_thumb/book8.jpg"
+                class="thumb_img"
+                alt=""
+              />
+              <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                <i class="fas fa-tags"></i>
+                drama</span
+              >
+              <div class="preview-author flex flex-center"></div>
+            </div>
+
+            <div class="feed-s-item">
+              <img
+                src="./assets/img/books_thumb/book8.jpg"
+                class="thumb_img"
+                alt=""
+              />
+              <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                <i class="fas fa-tags"></i>
+                drama</span
+              >
+              <div class="preview-author flex flex-center"></div>
+            </div>
+
+            <div class="feed-s-item">
+              <img
+                src="./assets/img/books_thumb/book8.jpg"
+                class="thumb_img"
+                alt=""
+              />
+              <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                <i class="fas fa-tags"></i>
+                drama</span
+              >
+              <div class="preview-author flex flex-center"></div>
+            </div>
+
+            <div class="feed-s-item">
+              <img
+                src="./assets/img/books_thumb/book8.jpg"
+                class="thumb_img"
+                alt=""
+              />
+              <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
+                <i class="fas fa-tags"></i>
+                drama</span
+              >
+              <div class="preview-author flex flex-center"></div>
+            </div>
           </div>
-          <div class="new-book-cont flex flex-top">
-            <div class="new-book-desc">
-              <h1 class="ts-15">
-                New Visitors in the West from Jumanji Forest
-              </h1>
-              <span>
-                <span class="pr-10">165 pages</span>
-                <span>43 chapter</span>
-              </span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
-                provident?
-              </p>
-              <div class="like-comment p-6 pl-14 pr-14">
-                <span class="thump-up pr-14">
-                  <i class="fas fa-thumbs-up"></i>
-                </span>
-                <span class="thumb-count">433</span>
-                <span class="thump-down pl-14">
-                  <i class="fas fa-thumbs-down"></i>
+        </section>
+
+        <section class="pc-p-10">
+          <div class="first-feed mt-10 account-wrapper">
+            <div class="book-wallpaper book-wp2"></div>
+            <div class="feed-cont grid g-col-1-4 g-gap-8 p-10">
+              <div class="fee-thumb-cont t-center m-0 p-0">
+                <div class="f-feed-image">
+                  <img src="/assets/img/books_thumb/book7.jpg" srcset="" />
+                  <div class="ts-12">
+                    <span class="badge badge-gray p-4 pt-2 pb-2">War</span>
+                  </div>
+                </div>
+              </div>
+              <div class="feed-desc">
+                <h3 class="ts-16 mt-20">
+                  In th Part of Wisdom you will never miss
+                </h3>
+                <p class="ts-14">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, blanditiis?
+                </p>
+                <div class="like-comment p-4 pl-10 pr-10 ts-14">
+                  <span class="thump-up pr-14">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  <span class="thumb-count">433</span>
+                  <span class="thump-down pl-14">
+                    <i class="fas fa-thumbs-down"></i>
+                  </span>
+                </div>
+                <span class="t-center m-0 pl-20">
+                  <span class="ts-13">
+                    <i class="far fa-comment"></i>
+                    73.1k
+                  </span>
                 </span>
               </div>
             </div>
-            <div class="new-book-img">
-              <img src="./assets/img/books_thumb/book6.jpg" alt="">
-            </div>
           </div>
-        </div>
+        </section>
 
-        <div class="new-book-preview ts-14 p-10 mb-10">
-          <div class="top-view flex flex-center">
-            <img src="./assets/img/author1.jpg" alt="">
-            <span class="pl-6">Timileyin</span>
+        <section class="account-wrapper ts-14 mb-40">
+          <div class="account-cats p-10">
+            <ul class="grid g-col-2 align-center">
+              <li>
+                <img src="./assets/img/cats_thumb/cat_teen.jpg" alt="" />
+                <strong>
+                  Drama
+                </strong>
+              </li>
+              <li>
+                <img src="./assets/img/cats_thumb/cat_scifi.jpg" alt="" />
+                <strong>
+                  Movie Series
+                </strong>
+              </li>
+              <li>
+                <img src="./assets/img/cats_thumb/cat_sports.jpg" alt="" />
+                <strong>
+                  Sports
+                </strong>
+              </li>
+              <li>
+                <img src="./assets/img/cats_thumb/cat_history.jpg" alt="" />
+                <strong>
+                  Romance
+                </strong>
+              </li>
 
-            <span class="pl-15">(18 Books)</span>
+              <li>
+                <img src="./assets/img/cats_thumb/cat_romance.jpg" alt="" />
+                <strong>
+                  Sci-fi
+                </strong>
+              </li>
+              <li>
+                <img src="./assets/img/cats_thumb/cat_comedy.jpg" alt="" />
+                <strong>
+                  Magical
+                </strong>
+              </li>
+            </ul>
           </div>
-          <div class="new-book-cont flex flex-top">
-            <div class="new-book-desc">
-              <h1 class="ts-15">
-                New Visitors in the West from Jumanji Forest
-              </h1>
-              <span>
-                <span class="pr-10">165 pages</span>
-                <span>43 chapter</span>
-              </span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
-                provident?
-              </p>
-              <div class="like-comment p-6 pl-14 pr-14">
-                <span class="thump-up pr-14">
-                  <i class="fas fa-thumbs-up"></i>
-                </span>
-                <span class="thumb-count">433</span>
-                <span class="thump-down pl-14">
-                  <i class="fas fa-thumbs-down"></i>
-                </span>
-              </div>
-            </div>
-            <div class="new-book-img">
-              <img src="./assets/img/books_thumb/book7.jpg" alt="">
-            </div>
-          </div>
-        </div>
-
-        <div class="new-book-preview ts-14 p-10 mb-10">
-          <div class="top-view flex flex-center">
-            <img src="./assets/img/author1.png" alt="">
-            <span class="pl-6">Timileyin</span>
-
-            <span class="pl-15">(18 Books)</span>
-          </div>
-          <div class="new-book-cont flex flex-top">
-            <div class="new-book-desc">
-              <h1 class="ts-15">
-                New Visitors in the West from Jumanji Forest
-              </h1>
-              <span>
-                <span class="pr-10">165 pages</span>
-                <span>43 chapter</span>
-              </span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
-                provident?
-              </p>
-              <div class="like-comment p-6 pl-14 pr-14">
-                <span class="thump-up pr-14">
-                  <i class="fas fa-thumbs-up"></i>
-                </span>
-                <span class="thumb-count">433</span>
-                <span class="thump-down pl-14">
-                  <i class="fas fa-thumbs-down"></i>
-                </span>
-              </div>
-            </div>
-            <div class="new-book-img">
-              <img src="./assets/img/books_thumb/book9.jpg" alt="">
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
-    </section>
-
-
-    <section class="wrapper preview-set mt-10 pt-30 mb-40">
-      <h5>
-        <i class="fas fa-user-tag pr-3"></i>
-        You'll Also Like
-      </h5>
-      <div class="top-pick-book">
-
-        <div class="feed-s-item">
-          <img src="./assets/img/books_thumb/book9.jpg" class="thumb_img" alt="">
-          <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-            <i class="fas fa-tags"></i>
-            drama</span>
-          <div class="preview-author flex flex-center">
-          </div>
-        </div>
-
-        <div class="feed-s-item">
-          <img src="./assets/img/books_thumb/book11.jpg" class="thumb_img" alt="">
-          <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-            <i class="fas fa-tags"></i>
-            drama</span>
-          <div class="preview-author flex flex-center">
-          </div>
-        </div>
-
-        <div class="feed-s-item">
-          <img src="./assets/img/books_thumb/book7.jpg" class="thumb_img" alt="">
-          <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-            <i class="fas fa-tags"></i>
-            drama</span>
-          <div class="preview-author flex flex-center">
-          </div>
-        </div>
-
-        <div class="feed-s-item">
-          <img src="./assets/img/books_thumb/book5.jpg" class="thumb_img" alt="">
-          <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-            <i class="fas fa-tags"></i>
-            drama</span>
-          <div class="preview-author flex flex-center">
-          </div>
-        </div>
-
-        <div class="feed-s-item">
-          <img src="./assets/img/books_thumb/book6.jpg" class="thumb_img" alt="">
-          <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-            <i class="fas fa-tags"></i>
-            drama</span>
-          <div class="preview-author flex flex-center">
-          </div>
-        </div>
-
-        <div class="feed-s-item">
-          <img src="./assets/img/books_thumb/book7.jpg" class="thumb_img" alt="">
-          <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-            <i class="fas fa-tags"></i>
-            drama</span>
-          <div class="preview-author flex flex-center">
-          </div>
-        </div>
-
-        <div class="feed-s-item">
-          <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
-          <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-            <i class="fas fa-tags"></i>
-            drama</span>
-          <div class="preview-author flex flex-center">
-          </div>
-        </div>
-
-        <div class="feed-s-item">
-          <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
-          <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-            <i class="fas fa-tags"></i>
-            drama</span>
-          <div class="preview-author flex flex-center">
-          </div>
-        </div>
-
-        <div class="feed-s-item">
-          <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
-          <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-            <i class="fas fa-tags"></i>
-            drama</span>
-          <div class="preview-author flex flex-center">
-          </div>
-        </div>
-
-        <div class="feed-s-item">
-          <img src="./assets/img/books_thumb/book8.jpg" class="thumb_img" alt="">
-          <span class="badge badge-gray ts-12 p-8 pt-2 pb-2">
-            <i class="fas fa-tags"></i>
-            drama</span>
-          <div class="preview-author flex flex-center">
-          </div>
-        </div>
-
+      <div class="account-right">
+        hello
       </div>
-    </section>
+    </div>
 
-    <div class="first-feed mt-10 account-wrapper">
-      <div class="book-wallpaper book-wp2">
+    <!-- START HERE -->
 
-      </div>
-      <div class="feed-cont grid g-col-1-4 g-gap-8 p-10">
-        <div class="fee-thumb-cont t-center m-0 p-0">
-          <div class="f-feed-image">
-            <img src="/assets/img/books_thumb/book7.jpg" srcset="">
-          <div class="ts-12">
-          <span class="badge badge-gray p-4 pt-2 pb-2">War</span>
-          </div>
-          </div>
-        </div>
-        <div class="feed-desc">
-          <h3 class="ts-16 mt-20">In th Part of Wisdom you will never miss</h3>
-          <p class="ts-14">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, blanditiis?
-          </p>
-          <div class="like-comment p-4 pl-10 pr-10 ts-14">
-            <span class="thump-up pr-14">
-              <i class="fas fa-thumbs-up"></i>
-            </span>
-            <span class="thumb-count">433</span>
-            <span class="thump-down pl-14">
-              <i class="fas fa-thumbs-down"></i>
-            </span>
-          </div>
-          <span class="t-center m-0 pl-20">
-            <span class="ts-13">
-              <i class="far fa-comment"></i>
-              73.1k
-            </span>
-            </span>
+    <!-- Sticky Header Ends Here -->
 
-          </div>
-        </div>
-      </div>
+    <!-- End Here -->
 
-
-      <section class="account-wrapper ts-14 mb-40">
-        <div class="account-cats p-10">
-          <ul class="grid g-col-2 align-center">
-            <li>
-              <img src="./assets/img/cats_thumb/cat_teen.jpg" alt="">
-              <strong>
-                Drama
-              </strong>
-            </li>
-            <li>
-              <img src="./assets/img/cats_thumb/cat_scifi.jpg" alt="">
-              <strong>
-                Movie Series
-              </strong>
-            </li>
-            <li>
-              <img src="./assets/img/cats_thumb/cat_sports.jpg" alt="">
-              <strong>
-                Sports
-              </strong>
-            </li>
-            <li>
-              <img src="./assets/img/cats_thumb/cat_history.jpg" alt="">
-              <strong>
-                Romance
-              </strong>
-            </li>
-
-
-            <li>
-              <img src="./assets/img/cats_thumb/cat_romance.jpg" alt="">
-              <strong>
-                Sci-fi
-              </strong>
-            </li>
-            <li>
-              <img src="./assets/img/cats_thumb/cat_comedy.jpg" alt="">
-              <strong>
-                Magical
-              </strong>
-            </li>
-
-
-
-          </ul>
-        </div>
-      </section>
-
-
-
-    <footer class="ts-14 t-center" id="account_footer">
+    <footer class="ts-14 t-center pc-d-none" id="account_footer">
       <div class="footer-tab flex flex-bottom flex-justify-center">
         <div class="tab flex-item-width">
           <i class="fas fa-user"></i>

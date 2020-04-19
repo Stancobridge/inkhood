@@ -27,13 +27,13 @@
 .select-field {
   font-size: 14px;
 }
-.select-field-theme{
+.select-field-theme {
   outline: none;
   border: none;
   background-color: rgb(243, 243, 243);
   font-style: inherit;
 }
-option{
+option {
   font-style: inherit !important;
 }
 .search-input {
@@ -53,21 +53,25 @@ option{
   border-bottom: none;
 }
 
-
-.form-field-theme{
+.form-field-theme {
   border: none;
   outline: none;
 }
 
-.read-form{
+.read-form {
   border: 1px solid gray;
   border-radius: 10px;
 }
 
-.read-font-size{
+.read-font-size {
   width: 60%;
   border: none;
   background-color: transparent;
   outline: none;
   text-align: center;
+}
+
+.search {
+  flex-basis: 100%;
+  margin-left: 6px !important;
 }

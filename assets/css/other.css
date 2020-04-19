@@ -79,6 +79,11 @@
   margin-top: 50px;
 }
 
+.sticky{
+  position: sticky;
+  top: 0px;
+}
+
 .bg-light{
   background-color: white;
 }

@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- Sticky Header Starts Here -->
-    <header class="nav-bar" id="header-dark">
+    <header class="nav-bar pc-d-none" id="header-dark">
       <div class="wrapper pt-6">
         <nav class="ink-nav pt-10 flex-center">
           <div class="logo">
@@ -60,8 +60,15 @@
       </div>
     </header>
     <!-- Sticky Header Ends Here -->
-    <div class="push-content-header"></div>
-    <section class="page-content">
+    <div class="push-content-header pc-d-none"></div>
+    <div class="pc-header pc-wrapper m-none">
+      Here is Pc Header
+    </div>
+    <section class="page-content pc-grid g-col-3-2 pc-wrapper">
+      <div class="left-login">
+        <!-- DESIGN FOR PC LOGIN -->
+        HELLO lorem400
+      </div>
       <div class="wrapper reg-cont pt-20 pb-20 mb-30">
         <h1 class="ts-20 t-title t-center">
           Account Login
@@ -131,7 +138,7 @@
           <hr class="hr-separator" />
         </div>
 
-        <div class="inputs-cont wrapper" class="ts-15 mb-20">
+        <div class="inputs-cont wrapper  pc-p-10" class="ts-15 mb-20">
           <form action="/account.html" method="get">
             <div class="form-group mb-20">
               <input
